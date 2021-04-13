@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Santo Ar</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+
+        <header id="Home">
+            <div class="img-wrapper">
+                <img src="imagens/background3.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Santo Ar</h1>
+                <p>Manutenção de Ar Condicionado.</p>
+                <button>Contate-nos</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#Home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Sobre</a></li>
+                    <li class="menu-item"><a href="#Servicos" class="menu-link">Serviços</a></li>
+                    <li class="menu-item"><a href="#Contato" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://api.whatsapp.com/send?phone=5511959262286&text=Ol%C3%A1!%20Estou%20no%20site%20da%20Santo%20Ar%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/condicionadosantoar/"><i class="fab fa-instagram"></i></a>
+                <a href="https://pt-br.facebook.com/santo.ar.961"><i class="fab fa-facebook-square"></i></a>
+            </div>    
+        </aside>
+
+        <section class="sessao-servicos" id="Servicos">
+            <div class="sessao-header">
+                <h1>Serviços</h1>
+            </div>
+            <div class="conteudo-servicos">
+                <div class="servicos">
+                    <div class="servicos-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Instalação</h3>
+                    </div>
+                    <div class="servicos-text">
+                        <p>Esta pensando em comprar um ar condicionado? Realizamos a instalação de qualquer modelo, 
+                            em qualquer lugar e o melhor... Cabe no seu bolso... Faça uma cotação agora mesmo, 
+                            <a href="#">Clicando aqui.</a></p>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <div class="servicos-header">
+                        <i class="fas fa-soap"></i>
+                        <h3>Higienização</h3>
+                    </div>
+                    <div class="servicos-text">
+                        <p>Quem tem um ar condicionado em casa, deve se preocupar muito com a 
+                            higienização desse aparelho, tanto para garantir a manutenção da nossa saúde, 
+                            como também a qualidade do seu funcionamento..</p>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <div class="servicos-header">
+                        <i class="fas fa-temperature-high"></i>
+                        <h3>Carga de Fluido</h3>
+                    </div>
+                    <div class="servicos-text">
+                        <p>Para que se possa obter o bom funcionamento do ar condicionado é preciso 
+                            estar sempre atento ao gás refrigerante que é essencial para o sistema de 
+                            refrigeração. Então se o seu acabou, nós realizamos a carga do gás para você.</p>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <div class="servicos-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Manutenção</h3>
+                    </div>
+                    <div class="servicos-text">
+                        <p>Realizar a manutenção do ar condicionado é essencial para garantir não só a melhor 
+                            eficiência energética do aparelho, como também evitar riscos à saúde, 
+                            estender seu tempo de vida útil e economizar dinheiro com reparos imprevistos 
+                            e normalmente o ar condicionado para de funcionar quando você mais precisa.</p>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <div class="servicos-header">
+                        <i class="far fa-snowflake"></i>
+                        <h3>PMOC</h3>
+                    </div>
+                    <div class="servicos-text">
+                        <p>Com o PMOC você irá garantir a higiene dos equipamentos e estruturas envolvidos 
+                             no processo de climatização, para que estes estejam livres de fungos, 
+                             bactérias, ácaros, contaminantes e material particulado.</p>
+                    </div>
+                </div>
+                <div class="servico-img-wrapper">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-contato" id="Contato">
+            <div class="contato-wrapper">
+                <div class="contato-left">
+
+                </div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome" required>
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email" required>
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <input list="cidades" class="field" id="cidade" required>
+                            <datalist id="cidades">
+                                <option value="São Paulo"></option>
+                                <option value="Guarulhos"></option>
+                                <option value="Campinas"></option>
+                                <option value="São Bernardo do Campo"></option>
+                                <option value="Santo André"></option>
+                                <option value="Osasco"></option>
+                                <option value="São José dos Campos"></option>
+                                <option value="Ribeirão Preto"></option>
+                                <option value="Sorocaba"></option>
+                                <option value="Santos"></option>
+                                <option value="Mauá"></option>
+                                <option value="Carapicuíba"></option>
+                                <option value="São José do Rio Preto"></option>
+                                <option value="Diadema"></option>
+                                <option value="Jundiaí"></option>
+                            </datalist>
+                            <label for="cidade" class="field-label">Cidade</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" class="field" id="whatsapp">
+                            <label for="whatsapp" class="field-label">Whatsapp</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem" required></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy: 2020, Santo Ar - Todos os direitos reservados</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511959262286&text=Ol%C3%A1!%20Estou%20no%20site%20da%20Santo%20Ar%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/condicionadosantoar/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://pt-br.facebook.com/santo.ar.961"><i class="fab fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#Home" id="btop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</body>
+
+<script src="/JS/script.js"></script>
+</html>
